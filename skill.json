@@ -1,0 +1,41 @@
+{
+  "name": "genpark-bootstrap-teleprompter-prompt-compiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Bootstrap teleprompter prompt compiler executing automated few-shot synthesis and validation metric optimization.",
+  "author": "genpark",
+  "category": "prompt-engineering",
+  "tags": [
+    "dspy-compiler",
+    "teleprompter",
+    "few-shot-optimization",
+    "prompt-synthesis",
+    "metric-driven-prompts"
+  ],
+  "inputs": {
+    "signature_task": {
+      "type": "string"
+    },
+    "training_examples_count": {
+      "type": "integer"
+    },
+    "optimization_metric": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "compiled_program_id": {
+      "type": "string"
+    },
+    "baseline_accuracy_pct": {
+      "type": "number"
+    },
+    "optimized_accuracy_pct": {
+      "type": "number"
+    },
+    "compiled_prompt_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
